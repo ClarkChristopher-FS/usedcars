@@ -1,0 +1,72 @@
+html {
+  background-image: url("../IMGs/car-finder-bg.jpg");
+}
+
+/* Centered container with bg image */
+.car-finder {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 16px;
+}
+
+/* Card  */
+.panel {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: #111827;
+}
+
+/* Vertical form*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+label {
+  font-size: 14px;
+  color: #333;
+}
+select,
+input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* Locked until previous choice made */
+.locked {
+  background: #f0f2f5;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+/* Primary button */
+#search {
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+#search.locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
